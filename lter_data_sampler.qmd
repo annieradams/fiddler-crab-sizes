@@ -22,7 +22,7 @@ labs(title = "Crab water temp vs Size", caption = "this is my caption")
 ```{r}
 pie_crab_summary <- pie_crab %>%group_by(site) %>% 
   summarize(mean_size = round(mean(size, na.rm = TRUE, 2)),
-            sd_size = sd(size, na.rm = TRUE),
+            sd_size_mm = sd(size, na.rm = TRUE),
             sample_size = n()
             )
   
