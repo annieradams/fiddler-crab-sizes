@@ -12,4 +12,5 @@ library(themeAnnie)
 
 ```{r}
 ggplot(data = pie_crab, aes(x = size, y = water_temp)) + geom_point() + theme_outdoors()
+#Wow, look at this graph!
 ```
