@@ -2,6 +2,9 @@
 title: "fiddler crab sizes"
 format: html
 editor: visual
+execute:
+  echo: false
+  warning: false
 ---
 
 ```{r}
@@ -11,6 +14,7 @@ library(themeAnnie)
 ```
 
 ```{r}
-ggplot(data = pie_crab, aes(x = size, y = water_temp)) + geom_point() + theme_outdoors()
+ggplot(data = pie_crab, aes(x = size, y = water_temp)) + geom_point() + theme_outdoors()+
+labs(title = "Crab water temp vs Size", caption = "this is my caption")
 #Wow, look at this graph!
 ```
