@@ -6,4 +6,10 @@ editor: visual
 
 ```{r}
 library(lterdatasampler)
+library(tidyverse)
+library(themeAnnie)
+```
+
+```{r}
+ggplot(data = pie_crab, aes(x = size, y = water_temp)) + geom_point() + theme_outdoors()
 ```
